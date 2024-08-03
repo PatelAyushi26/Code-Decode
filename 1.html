@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .navbar-nav .nav-item {
+      margin-left: 15px;
+    }
+    .navbar-nav .nav-item:first-child {
+      margin-left: 500px;
+    }
+    .nav-link {
+      color: grey !important; /* Set font color to grey */
+    }
+    .hero {
+      background-color: #f8f9fa; /* Light grey background */
+      padding: 50px 0; /* Padding for top and bottom */
+    }
+    .hero .container {
+      max-width: 600px; /* Limit the width of the content */
+      text-align: left; /* Align text to the left */
+    }
+    .hero h1, .hero p {
+      color: #333; /* Dark text color for contrast */
+    }
+    .guide {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .guide .btn {
+      margin-top: 20px;
+    }
+    .features {
+      padding: 50px 0; /* Padding for top and bottom */
+      background-color: #f8f9fa; /* Light grey background for the section */
+    }
+    .features h3 {
+      font-size: 2rem; /* Bigger font size for the heading */
+    }
+    .features p {
+      font-size: 2.3rem; /* Bigger font size for the paragraph */
+    }
+    .features ul {
+      font-size: 1.1rem; /* Bigger font size for the list items */
+    }
+    .list-container {
+      display: flex;
+      justify-content: flex-end; /* Align the list to the right */
+    }
+    .list-container ul {
+      margin: 0; /* Remove default margin for better alignment */
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 50px 0;
+    }
+    .footer h5 {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .footer a {
+      color: #fff;
+    }
+    .footer .form-control {
+      background-color: #495057;
+      border: none;
+      color: #fff;
+    }
+    .footer .form-check-label {
+      color: #fff;
+    }
+    .list-unstyled li {
+      position: relative;
+      padding-left: 25px; /* Adjust this value to make space for the square box */
+      margin-bottom: 10px;
+    }
+    .list-unstyled li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 15px; /* Size of the square box */
+      height: 15px; /* Size of the square box */
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid d-flex ms-5">
+      <img src="logo.jpeg" style="height: 90px; width: 250px;">
+      <div class="collapse navbar-collapse justify-content-between">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
+          <li class="nav-item" style="margin-left: 500px;">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-3" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-3" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-3" aria-current="page" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-light px-5 py-3 me-4 mt-4 fw-bold rounded-2" type="submit">Call to Action</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- Hero Section -->
+ 
+<section class="hero">
+  <div class="container">
+    <h1>The future of web design, today</h1>
+    <p>The future of web design, today</p>
+    <a class="btn btn-primary" href="#">Call to action</a>
+   
+  </div>
+  <div>
+    <img src="logo.jpeg" style="height: 200px; width: 300px;">
+  </div>
+</section>
+
+
+  <!-- Guide Section -->
+  <section class="guide">
+    <div class="container">
+      <h2>Don’t forget to grab this one, it’s free!</h2>
+      <p>Download the Ultimate con tomate guide.</p>
+      <a class="btn btn-secondary" href="#">Call to action</a>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>What we do</h3>
+          <p>Our mission is very important to the planet: we plant as many trees as possible. Can you figure out?</p>
+        </div>
+        <div class="col-md-6">
+          <div class="list-container">
+            <ul class="list-unstyled">
+              <li>We recycle everything we see</li>
+              <li>We teach people how to reuse their stuff</li>
+              <li>We believe in human being as problem solver</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Things Section -->
+  
+<section class="features py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured things</h2>
+    <p class="text-center mb-5">Our mission is very important to the planet: we plant as many trees as possible. Can you figure out?</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="logo.jpeg" class="card-img-top" alt="Feature 1">
+          <div class="card-body">
+            <h5 class="card-title">The future of web design, today</h5>
+            <p class="card-text">The future of web design, today</p>
+            <a href="#" class="btn btn-primary">Call to action</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="logo.jpeg" class="card-img-top" alt="Feature 2">
+          <div class="card-body">
+            <h5 class="card-title">The future of web design, today</h5>
+            <p class="card-text">The future of web design, today</p>
+            <a href="#" class="btn btn-primary">Call to action</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="logo.jpeg" class="card-img-top" alt="Feature 3">
+          <div class="card-body">
+            <h5 class="card-title">The future of web design, today</h5>
+            <p class="card-text">The future of web design, today</p>
+            <a href="#" class="btn btn-primary">Call to action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Our mission is very important to the planet: we plant as many trees as possible. Can you figure out?</p>
+        </div>
+        <div class="col-md-4">
+          <h5>More information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Stay in contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:info@contact.com">info@contact.com</a></li>
+            <li><a href="tel:+34654654654">+34 654 654 654</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h5>Subscribe now to the newsletter</h5>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your email">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="privacyPolicy">
+              <label class="form-check-label" for="privacyPolicy">I consent the privacy policy</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe!</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled mt-4">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Legal Advice</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="mt-4">&copy; 2022 Basic Components. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
